@@ -1,0 +1,25 @@
+.team {
+    position: relative;
+    padding: 200px 0;
+}
+
+.team__block1 {
+    position: absolute;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.team__block1_num {
+    position: absolute;
+    align-self: flex-start;
+    left: 0;
+    @extend %num;
+}
+
+.team__block1_letter {
+    @extend %letter;
+    text-shadow: 0 50px 165px rgba(0, 0, 0, 0.4);
+}

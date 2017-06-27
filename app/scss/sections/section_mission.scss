@@ -1,0 +1,37 @@
+.section__mission {
+    padding: 100px 0 220px 0;
+}
+
+.mission__container {
+    align-items: center;
+}
+
+.mission__block_left {
+    position: absolute;
+    left: 0;
+}
+
+.mission__block_left_num {
+    @extend %num;
+}
+
+.mission__block_right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 660px;
+    box-shadow: 0 169px 152px rgba(0, 0, 0, 0.45);
+}
+
+.mission__block_right_pic_img {
+    max-width: 100%;
+}
+
+.mission__block_right_text {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    line-height: 1.5;
+    width: 480px;
+    left: 68%;
+}
