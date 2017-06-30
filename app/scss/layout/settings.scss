@@ -1,14 +1,47 @@
-/*-----------------------------------
-colors
------------------------------------*/
+// mixins
+@mixin media($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
 
+// variables
 $bg: #191e3f;
 $red: #d25a5e;
+// responsive variables
+$tablets: 768px;
+$laptop: 1200px;
+// template variables
+%num {
+    display: flex;
+    position: relative;
+    color: rgba(255, 255, 255, 0.025);
+    font-family: "Yantramanav";
+    font-size: 286px;
+    font-weight: 900;
+    line-height: 0;
+    justify-content: center;
+    &:before {
+        content: attr(data-css);
+        position: absolute;
+        transform: rotate(-90deg);
+        color: rgba(255, 255, 255, 0.6);
+        font-family: "Raleway-Lighter";
+        font-size: 35px;
+        font-weight: 100;
+    }
+}
 
-/*-----------------------------------
-adjustment
------------------------------------*/
+%letter {
+    text-shadow: 0 140px 158px rgba(0, 0, 0, 0.4);
+    color: rgba($bg, 0.61);
+    font-family: "Raleway-Black";
+    font-size: 700px;
+    font-weight: 900;
+    line-height: 0.4;
+}
 
+// adjustment
 html,
 body {
     width: 100%;
@@ -41,6 +74,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include media($tablets) {
+        padding: 0 30px;
+    }
 }
 
 header {
@@ -63,6 +99,9 @@ ul {
 
 a {
     text-decoration: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 p {

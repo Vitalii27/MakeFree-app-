@@ -25,6 +25,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    @include media($tablets) {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .event__block1_num {
@@ -33,6 +39,11 @@
     bottom: 0;
     z-index: 1;
     @extend %num;
+    @include media($tablets) {
+        bottom: auto;
+        left: auto;
+        z-index: auto;
+    }
 }
 
 .event__block1_letter {
@@ -42,6 +53,17 @@
     line-height: 0.5;
     font-size: 900px;
     @extend %letter;
+    @include media($tablets) {
+        position: relative;
+        font-size: 500px;
+        right: auto;
+        line-height: 1;
+        margin-top: 50px;
+        text-shadow: 0 50px 150px rgba(0, 0, 0, 0.4);
+    }
+    @include media($laptop) {
+        font-size: 700px;
+    }
 }
 
 .event__block2 {
@@ -59,4 +81,7 @@
     font-size: 52px;
     line-height: 1.5;
     font-weight: 100;
+    @include media($tablets) {
+        text-align: center;
+    }
 }

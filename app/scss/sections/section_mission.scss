@@ -1,4 +1,4 @@
-.section__mission {
+.mission {
     padding: 100px 0 220px 0;
 }
 
@@ -9,6 +9,10 @@
 .mission__block_left {
     position: absolute;
     left: 0;
+    @include media($tablets) {
+        position: relative;
+        margin-bottom: 50px;
+    }
 }
 
 .mission__block_left_num {
@@ -21,10 +25,22 @@
     position: relative;
     max-width: 660px;
     box-shadow: 0 169px 152px rgba(0, 0, 0, 0.45);
+    @include media($tablets) {
+        display: block;
+        margin-top: 100px;
+        box-shadow: 0 50px 150px rgba(0, 0, 0, 0.45);
+        right: 8%;
+    }
 }
 
 .mission__block_right_pic_img {
     max-width: 100%;
+    @include media($tablets) {
+        position: relative;
+        margin-top: 10px;
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 .mission__block_right_text {
@@ -34,4 +50,14 @@
     line-height: 1.5;
     width: 480px;
     left: 68%;
+    @include media($tablets) {
+        position: absolute;
+        left: auto;
+        top: 50%;
+        margin-top: 10px;
+        width: 370px;
+    }
+    @include media($laptop) {
+        left: 30%
+    }
 }

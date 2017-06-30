@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MakeFree</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/vendor.min.css" media="screen, projection, print">
     <link rel="stylesheet" type="text/css" href="/css/main.min.css" media="screen, projection, print">
 </head>
@@ -15,8 +15,8 @@
 
 <body>
     <div class="wrapper">
-        <section class="section__header">
-            <header class="header">
+        <section class="section__header" id="header">
+            <header class="header" data-parallax='{"backgroundPositionX":"20%"}'>
                 <div class="container header__container">
                     <div class="header__row1">
                         <a href="#" class="header__row1_logo_link">
@@ -25,18 +25,18 @@
                         <a href="#" class="header__row1_menu_link"></a>
                     </div>
                     <div class="header__row2">
-                        <h1 class="header__row2_text">we build innovative companies</h1>
+                        <h1 class="header__row2_text" data-parallax='{"scale":{"from":0.8,"to":1}, "y":{"from":"-5%","to":"5%"}}'>we build innovative companies</h1>
                     </div>
                 </div>
             </header>
         </section>
-        <section class="section__mission">
+        <section class="mission" id="mission">
             <div class="container mission__container">
                 <div class="mission__block_left">
 
-                    <div class="mission__block_left_num" data-css="mission">01</div>
+                    <div class="mission__block_left_num" data-css="mission" data-parallax='{"scale":{"from":0.8,"to":1}, "x":{"from":"-5%","to":"0%"}}'>01</div>
                 </div>
-                <div class="mission__block_right">
+                <div class="mission__block_right" data-parallax='{"scale":{"from":0.8,"to":1}, "x":{"from":"5%","to":"5%"}}'>
                     <div class="mission__block_right_pic"><img src="../img/mountains.png" alt="missionLogo" class="mission__block_right_pic_img"></div>
                     <div class="mission__block_right_text">
                         <p>Is allowance instantly strangers applauded discourse so. Separate entrance welcomed sensible laughing why one moderate shy. We seeing piqued garden he. As in merry at forth least ye stood.</p><br>
@@ -45,11 +45,11 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container projects__container">
                 <div class="projects__block1">
-                    <div class="projects__block1_letter">R</div>
-                    <div class="projects__block1_num" data-css="projects">02</div>
+                    <div class="projects__block1_letter" data-parallax='{"scale":{"from":0.7,"to":1}, "x":{"from":"-5%","to":"3%"}}'>R</div>
+                    <div class="projects__block1_num" data-css="projects" data-parallax='{"scale":{"from":0.7,"to":1}, "y":{"from":"-5%","to":"5%"}}'>02</div>
                 </div>
                 <div class="projects__block2">
                     <a href="#" class="projects__block2_link"><img src="../img/1.png" alt="logo" class="projects__block2_img"></a>
@@ -61,10 +61,10 @@
                 </div>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="team">
             <div class="container team__container">
                 <div class="team__block1">
-                    <div class="team__block1_num" data-css="team">03</div>
+                    <div class="team__block1_num" data-css="team" data-parallax='{"scale":{"from":0.7,"to":1}, "y":{"from":"-5%","to":"20%"}}'>03</div>
                     <div class="team__block1_letter">T</div>
                 </div>
                 <div class="team__block2">
@@ -77,7 +77,7 @@
                                 <img src="../img/photo-1.png" alt="photo1" class="team__block2_item_elem_img">
                                 <div class="team__block2_item_elem_info">
                                     <div class="team__block2_item_elem_name">George M. Bryson</div>
-                                    <div class="team__block2_item_elem_spec">Founder & Group CEO</div>
+                                    <div class="team__block2_item_elem_spec">Founder &amp; Group CEO</div>
                                     <div class="team__block2_item_elem_text">
                                         <p>Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful wondered. Continual say suspicion provision you neglected sir curiosity unwilling.</p><br>
                                         <p>Simplicity end themselves increasing led day sympathize yet. General windows effects not are drawing man garrets.</p>
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="team__block2_item">
+                        <li class="team__block2_item" data-parallax='{"x":{"from":"-2.3%","to":"5%"}}'>
                             <div class="team__block2_item_elem">
                                 <img src="../img/photo-2.png" alt="photo2" class="team__block2_item_elem_img">
                                 <div class="team__block2_item_elem_info">
@@ -95,17 +95,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="team__block2_item">
+                        <li class="team__block2_item" data-parallax='{ "x":{"from":"2.3%","to":"-5%"}}'>
                             <div class="team__block2_item_elem">
                                 <img src="../img/photo-3.png" alt="photo3" class="team__block2_item_elem_img">
                                 <div class="team__block2_item_elem_info">
                                     <div class="team__block2_item_elem_name">Richard C. Main</div>
-                                    <div class="team__block2_item_elem_spec">Marketing & Communication Manager</div>
+                                    <div class="team__block2_item_elem_spec">Marketing &amp; Communication Manager</div>
                                     <div class="team__block2_item_elem_text"></div>
                                 </div>
                             </div>
                         </li>
-                        <li class="team__block2_item">
+                        <li class="team__block2_item" data-parallax='{ "x":{"from":"-2.3%","to":"5%"}}'>
                             <div class="team__block2_item_elem">
                                 <img src="../img/photo-4.png" alt="photo4" class="team__block2_item_elem_img">
                                 <div class="team__block2_item_elem_info">
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="team__block2_item">
+                        <li class="team__block2_item" data-parallax='{ "x":{"from":"2.3%","to":"-5%"}}'>
                             <div class="team__block2_item_elem">
                                 <img src="../img/photo-5.png" alt="photo5" class="team__block2_item_elem_img">
                                 <div class="team__block2_item_elem_info">
@@ -130,11 +130,11 @@
                 </div>
             </div>
         </section>
-        <section class="event">
+        <section class="event" id="event">
             <div class="container event__container">
                 <div class="event__block1">
-                    <div class="event__block1_num" data-css="event">04</div>
-                    <div class="event__block1_letter">E</div>
+                    <div class="event__block1_num" data-css="event" data-parallax='{"scale":{"from":0.8,"to":1}, "x":{"from":"-5%","to":"2%"}}'>04</div>
+                    <div class="event__block1_letter" data-parallax='{"scale":{"from":0.8,"to":0.9}, "y":{"from":"-10%","to":"10%"}}'>E</div>
                 </div>
                 <div class="event__block2">
                     <h2 class="event__block2_title">Feel emotions</h2>
@@ -147,17 +147,17 @@
         </section>
         <footer class="footer">
 
-            <a href="#" class="footer__logo">
-                <img src="../img/logo-footer.png" alt="footerLogo" class="footer__logo_img"></img>
+            <a href="#header" class="footer__logo">
+                <img class="footer__logo_img" src="../img/logo-footer.png" alt="footerLogo" class="footer__logo_img"></img>
             </a>
             <div class="footer__nav">
-                <a href="#" class="footer__nav_link">About</a>
-                <a href="#" class="footer__nav_link">Faq</a>
-                <a href="#" class="footer__nav_link">Blog</a>
-                <a href="#" class="footer__nav_link">Tour</a>
-                <a href="#" class="footer__nav_link">Contact</a>
+                <a href="#header" class="footer__nav_link">Home</a>
+                <a href="#mission" class="footer__nav_link">Mission</a>
+                <a href="#projects" class="footer__nav_link">Projects</a>
+                <a href="#team" class="footer__nav_link">Team</a>
+                <a href="#event" class="footer__nav_link">Event</a>
             </div>
-            <div class="footer__info">&copy; 2016 Maker. Made by <a class="footer__info_link" href="#">v.khlystun</a></div>
+            <div class="footer__info">&copy; 2017 Maker. Made by <a class="footer__info_link" href="#">v.khlystun</a></div>
 
 
 

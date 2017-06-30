@@ -17,6 +17,9 @@
     flex-basis: 100%;
     text-align: center;
     padding: 84px 0 0 0;
+    @include media($tablets) {
+        text-align: left;
+    }
 }
 
 .header__row1_menu_link {
@@ -35,10 +38,20 @@
         height: 4px;
         background: #fff;
     }
+    @include media($tablets) {
+        right: 30px;
+    }
+    @include media($laptop) {
+        margin: 0 20px;
+    }
 }
 
 .header__row2_text {
+    text-align: center;
     font-size: 60px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.6);
+    @include media($tablets) {
+        font-size: 40px;
+    }
 }

@@ -22,13 +22,15 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 
 // Пути к нашим модулям яваскрипт
 let moduleJs = [
-    'app/js/first.js',
-    'app/js/second.js',
-    'app/js/third.js',
+    'app/js/nicescroll.js',
+    'app/js/anchor.js',
+    'app/js/jquery.requestAnimationFrame.min.js',
+    'app/js/jquery.data-parallax.js',
     'app/js/main.js'
 ];
 // Пути к нашим внешним плагинам и библиотекам яваскрипт
 let vendorJs = [
+
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/owl.carousel/dist/owl.carousel.min.js'
     ]

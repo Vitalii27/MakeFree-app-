@@ -30,15 +30,32 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @include media($tablets) {
+        position: relative;
+        margin: 150px 0;
+        // flex-wrap: wrap;
+    }
 }
 
 .projects__block1_letter {
     @extend %letter;
+    // line-height: .3;
+    @include media($tablets) {
+        position: absolute;
+        font-size: 400px;
+        margin-top: 300px;
+        order: 2;
+        // flex-wrap: wrap;
+    }
 }
 
 .projects__block1_num {
     @extend %num;
     align-self: flex-start;
+    @include media($tablets) {
+        order: 1;
+        // flex-wrap: wrap;
+    }
 }
 
 .projects__block2 {
@@ -46,6 +63,10 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
+    @include media($tablets) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .projects__block2_link {
